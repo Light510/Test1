@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://raw.githubusercontent.com/DzarelDeveloper/Img/main/CrushDay.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            background: rgba(104, 69, 69, 0.6);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            max-width: 90%;
+        }
+
+        .content img {
+            width: 200px;
+            height: 200px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 5px solid rgb(175, 135, 135);
+            box-shadow: 0 0.4rem 1rem rgba(211, 88, 88, 0.5);
+        }
+
+        .content p {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            line-height: 1.4;
+        }
+
+        .content .button {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .content .button a {
+            text-decoration: none;
+            padding: 12px 30px;
+            background-color: #ff408083;
+            color: white;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        .content .button a:hover {
+            background-color: #e0006f;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <img src="data:image/png;base64,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" alt="Profile Image">
+        <p>test 123</p>
+        <div class="button">
+            <a href="Home.html">hah</a>
+        </div>
+    </div>
+</body>
+</html>

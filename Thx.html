@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://raw.githubusercontent.com/DzarelDeveloper/Img/main/CrushDay.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .content a {
+            text-decoration: none;
+            color :rgb(255, 255, 255);
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .content .icon {
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+            animation: slide 2s infinite;
+        }
+
+        .content a:hover {
+            color : rgb(201, 37, 37);
+        }
+
+        .content .buttons a {
+            text-decoration: none;
+            padding: 1px 25px;
+            margin:0.5rem;
+            background-color: #ff4081;
+            color: white;
+            font-weight: bold;
+            border-radius: 35px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        .content .buttons a:hover {
+            background-color: #e0006f;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+        }
+
+        @keyframes slide {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(0);
+            }
+            40% {
+                transform: translateX(10px);
+            }
+            60% {
+                transform: translateX(5px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <a href="Thx.html">THX</a>
+        <div class="buttons">
+            <a href="index.html">bek</a>
+            <a href="Thx.html">neks</a>
+        </div>
+    </div>
+</body>
+</html>
